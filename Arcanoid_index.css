@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0e1622;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ball_1 {
+    width: 45px;
+    height: 70px;
+    background-color: #f63c52;
+    border-radius: 50%;
+    position: fixed;
+    top: 3%;
+    left: 120px;
+    animation: jump_down 2.25s
+    linear infinite;
+}
+
+@keyframes jump_down {
+    0% {
+        width: 50px;
+        height: 50px;
+        top: 3%;
+        background: #f63c52;
+    }
+
+    12.5% {
+        top: 25%;
+        background: #f63c52;
+    }
+
+    25% {
+        top: 50%;
+        background: #f63c52;
+    }
+
+    37.5% {
+        top: 75%;
+        background: #f63c52; 
+    }
+
+    49% {
+        background: #f63c52;
+    }
+
+    50% {
+        top: 85.9%;
+        background: #32d800;
+    }
+
+    62.5% {
+        top: 75%;
+        background: #32d800;
+    }
+
+    75% {
+        top: 50%;
+        background: #32d800;
+    }
+
+    87.5% {
+        top: 25%;
+        background: #32d800;
+    }
+
+    99% {
+        background: #32d800;
+    }
+
+    100% {
+        top: 3%;
+    }
+
+}
+
+
+
+#ball_2 {
+    width: 45px;
+    height: 70px;
+    background-color: #32d800;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 8%;
+    right: 120px;
+    animation: jump_up 2.25s
+    linear infinite;
+}
+
+@keyframes jump_up {
+    0% {
+        bottom: 3%;
+        background: #32d800;
+    }
+
+    12.5% {
+        bottom: 25%;
+        background: #32d800;
+    }
+
+    25% {
+        bottom: 50%;
+        background: #32d800;
+    }
+
+    37.5% {
+        bottom: 75%;
+        background: #32d800; 
+    }
+
+    49% {
+        background: #32d800;
+    }
+
+    50% {
+        bottom: 85.9%;
+        background: #f63c52;
+    }
+
+    62.5% {
+        bottom: 75%;
+        background: #f63c52;
+    }
+
+    75% {
+        bottom: 50%;
+        background: #f63c52;
+    }
+
+    87.5% {
+        bottom: 25%;
+        background: #f63c52;
+    }
+
+    99% {
+        background: #f63c52;
+    }
+
+    100% {
+        bottom: 3%;
+        width: 50px;
+        height: 50px;
+        background: #32d800;
+    }
+}
+
+#box_1 {
+    width: 400px;
+    height: 30px;
+    background-color: #2753f6;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    animation: right_move 2.25s
+     linear infinite;
+}
+
+@keyframes right_move {
+    0% {
+        left: 1%;
+    }
+
+    25% {
+        left: 35%;
+    }
+
+    50% {
+        left: 70%;
+    }
+
+    75% {
+        left: 35%;
+    }
+
+    100% {
+        left: 1%;
+    }
+}
+
+#box_2 {
+    width: 400px;
+    height: 30px;
+    background-color: #2753f6;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    animation: left_move 2.25s
+     linear infinite;
+}
+
+@keyframes left_move {
+    0% {
+        right: 1%;
+    }
+
+    25% {
+        right: 35%;
+    }
+
+    50% {
+        right: 70%;
+    }
+
+    75% {
+        right: 35%;
+    }
+
+    100% {
+        right: 1%;
+    }
+}
+
+
+
